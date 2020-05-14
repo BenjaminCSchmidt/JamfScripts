@@ -6,8 +6,8 @@ import pandas as pd
 
 # make a GET request to pull all users from Jamf, set env vars before running script and change url to your server
 url = "https://<your jamf server>.jamfcloud.com/JSSResource/users"
-username = os.environ['jamf_username']
-password = os.environ['jamf_pw']
+username = <your username>
+password = <your password>
 auth = (username, password)
 
 response = requests.get(url, auth=auth)
